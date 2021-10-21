@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      host: ubuntu20-lts
+      port: 27017
+      database: scrapy01
+  # Templates reloading during development
+  thymeleaf:
+    prefix: file:src/main/resources/templates/
+    cache: false
+
+  # Static resources reloading during development
+  resources:
+    static-locations: file:src/main/resources/static/
+  #  cache-period: 0

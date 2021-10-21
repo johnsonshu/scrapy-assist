@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Site List</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<div class="container">
+  <h1> WomenAdvanceNC ORG</h1>
+
+  <div class="row" th:each="entity,iterStat:${listData}" >
+    <div th:class="'col-lg-8 ' +  (${iterStat.odd}? 'bg-light' : 'bg-info')" >
+      <a target="_blank" th:text="${entity.title}" th:href="@{/mongo-detail/www-womenadvancenc-org(docId=${entity.id})}">title</a>
+    </div>
+  </div>
+
+</div> <!-- class="container" -->
+
+<footer class="footer navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><p class="text-muted">@Copyright 2021 zc2tech</p></div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
