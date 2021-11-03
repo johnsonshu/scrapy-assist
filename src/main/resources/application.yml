@@ -1,9 +1,4 @@
 spring:
-  data:
-    mongodb:
-      host: ubuntu20-lts
-      port: 27017
-      database: scrapy01
   # Templates reloading during development
   thymeleaf:
     prefix: file:src/main/resources/templates/

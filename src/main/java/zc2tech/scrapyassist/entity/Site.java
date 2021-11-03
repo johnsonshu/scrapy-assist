@@ -3,6 +3,8 @@ package zc2tech.scrapyassist.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Document(collection = "sites")
 public class Site {
     @Id
@@ -15,6 +17,12 @@ public class Site {
         this.title = title;
         this.url = url;
         this.description = description;
+    }
+
+    public Site() {
+        this.title = "";
+        this.url = "";
+        this.description = "";
     }
 
     public String getTitle() {

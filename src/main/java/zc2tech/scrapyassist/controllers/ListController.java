@@ -7,11 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import zc2tech.scrapyassist.repo.SiteMongoRepository;
 import zc2tech.scrapyassist.service.BeanFactoryDynamicAutowireService;
 
 @Controller
-@RequestMapping("/mongo/*")
+@RequestMapping("/mongoxx/*")
 public class ListController {
 //    private final zc2tech.scrapyassist.service.SiteService SiteService;
 
@@ -21,7 +20,7 @@ public class ListController {
     @Autowired
     private BeanFactoryDynamicAutowireService repoService;
 
-    @GetMapping("/mongo/{shortUrlContext}")
+    @GetMapping("/mongoxx/{shortUrlContext}")
     public String getAllSites(@PathVariable String shortUrlContext, Model model){
         MongoRepository repo = repoService.getRepo(shortUrlContext);
         model.addAttribute("listData", repo.findAll());

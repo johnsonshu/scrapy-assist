@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Site List</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
+  <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/css/site.css"/>
+  <script th:inline="javascript">
+  /*<![CDATA[*/
+    function confirmDelete(siteId,title) {
+      if (confirm("Delete " + title + "?")) {
+        var delUrl =  /*[[ @{/sites/do-del} ]]*/ ;
+        window.location.href = delUrl + "?siteId=" +  siteId;
+      }
+    }
+  /*]]>*/
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <span th:if="${note != null }" th:text="${note}">Notification Messages</span>
+  <a target="_self" class="btn btn-primary mb-2" th:href="@{/sites/add}">Add</a>
+  <div>
+    <form action="#" th:action="@{/sites/do-search}" method="post">
+      <input type="text"  name="keyword" th:value="${param.keyword ?:''}" />
+      <button class="btn btn-primary mb-2"  th:href="@{/sites/search}">Search</button>
+    </form>
+  </div>
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Title</th>
+      <th>URL</th>
+      <th>Description</th>
+      <th>Operation</th>
+    </tr>
+    <tr th:each="site:${sites}">
+      <td><a target="_blank" th:text="${site.title}" th:href="${@stringUtil.convert2Context(site.url)}"></a></td>
+      <td th:text="${site.url}">Name</td>
+      <td th:text="${site.description}">Info</td>
+
+      <td >
+
+          <a target="_self" th:text="Edit" th:href="@{/sites/edit(siteId=${site.id})}"></a>
+          <a target="_self" th:text="Delete"
+             th:href="${ 'javascript:confirmDelete(''' + site.id + ''',''' + site.title + ''')'}"></a>
+      </td><!--Operation-->
+    </tr>
+  </table>
+</div> <!-- class="container" -->
+
+<footer class="footer navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><p class="text-muted">@Copyright 2021 zc2tech</p></div>
+    </div>
+  </div>
+</footer>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="/bootstrap5/js/bootstrap.min.js"></script>
+
+</body>
+</html>

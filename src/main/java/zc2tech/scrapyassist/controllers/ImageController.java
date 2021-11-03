@@ -35,11 +35,11 @@ public class ImageController {
     String fileImageParentPath;
 
     // TODO , how to control client browser cache ?
-    @GetMapping("/image/{shortUrlContext}/{imgFileName}")
-    public ResponseEntity<byte[]>  showImage(@PathVariable String shortUrlContext
+    @GetMapping("/image/{imgContext}/{imgFileName}")
+    public ResponseEntity<byte[]>  showImage(@PathVariable String imgContext
             ,@PathVariable String imgFileName , Model model) throws Exception {
 
-        String fullPath = fileImageParentPath + "/" + shortUrlContext + "/"
+        String fullPath = fileImageParentPath + "/" + imgContext.substring(0,2) + "/" + imgContext + "/"
                 + StringUtil.convertImageName2Path( imgFileName);
 
         String strType = Files.probeContentType(Path.of(fullPath));

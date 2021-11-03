@@ -5,16 +5,19 @@
   <title>Site List</title>
 
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css"/>
 
 </head>
 <body>
 
 <div class="container">
-  <h1 th:text="${detail.title}"> </h1>
+  <h1> YiFy Movies</h1>
 
-  <div th:utext="${modifiedArticle}" />
-
+  <div class="row" th:each="entity,iterStat:${listData}" >
+    <div th:class="'col-lg-8 ' +  (${iterStat.odd}? 'bg-light' : 'bg-info')" >
+      <a target="_blank" th:text="${entity.title}" th:href="@{/mongo-detail/ww1-yifymovies-pro(docId=${entity.id})}">title</a>
+    </div>
+  </div>
 
 </div> <!-- class="container" -->
 

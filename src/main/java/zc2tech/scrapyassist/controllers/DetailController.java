@@ -15,17 +15,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 import zc2tech.scrapyassist.entity.ImageDownloadResult;
 import zc2tech.scrapyassist.entity.WomenAdvanceNc;
 import zc2tech.scrapyassist.service.BeanFactoryDynamicAutowireService;
+import zc2tech.scrapyassist.utils.ImgUtil;
 import zc2tech.scrapyassist.utils.StringUtil;
 
-import java.util.List;
-
 @Controller
-@RequestMapping("/mongo-detail/*")
+@RequestMapping("/mongo-detail9999/*")
 public class DetailController {
     @Autowired
     private BeanFactoryDynamicAutowireService repoService;
 
-    @GetMapping("/mongo-detail/{shortUrlContext}")
+    @GetMapping("/mongo-detail9999/{shortUrlContext}")
     public String getDetail(@PathVariable String shortUrlContext, @RequestParam String docId, Model model){
         MongoRepository repo = repoService.getRepo(shortUrlContext);
         WomenAdvanceNc entity =  (WomenAdvanceNc)repo.findById(docId).get();
@@ -54,14 +53,13 @@ public class DetailController {
     private void replaceElementAttr(Element e,String key,String shortUrlContext, ImageDownloadResult[] dlResults) {
         String oldUrl = e.attr(key);
         String newUrl = null;
-        newUrl = findLocalServerImgUrl(oldUrl,dlResults);
+        newUrl = ImgUtil.findLocalImgPath(oldUrl,dlResults);
         if (null == newUrl) {
             // Maybe, it's "data:image" of a "src" attribute
             // In this condition, we always use "data-src" to find the image path
             // then replace the "src" attribute
-            newUrl = findLocalServerImgUrl(e.attr("data-src"),dlResults);
+            newUrl = ImgUtil.findLocalImgPath(e.attr("data-src"),dlResults);
         }
-
         if (null == newUrl) {
             // still no data
             e.attr(key,"#");
@@ -69,14 +67,5 @@ public class DetailController {
             e.attr(key, "/image/" + shortUrlContext + "/"
                     + StringUtil.convertImagePath2Name(newUrl));
         }
-    }
-
-    private String findLocalServerImgUrl(String imgSrc, ImageDownloadResult[] dlResults) {
-        for (ImageDownloadResult r : dlResults ) {
-            if (r.getUrl().equals(imgSrc)) {
-                return r.getPath();
-            }
-        }
-        return null;
     }
 }

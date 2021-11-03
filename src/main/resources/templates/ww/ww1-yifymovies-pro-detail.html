@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Site List</title>
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
+  <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css"/>
+  <style>
+    .mvic-info {
+      display:block;
+      width:100%;
+      line-height:1
+    }
+    .mvic-left {
+      width:20%;
+      float:left;
+
+    }
+    .mvic-right {
+      width:80%;
+      float:left;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 th:text="${detail.title}"> </h1>
+  <div class="row row-cols-2">
+    <div class="col-sm">
+        <img style="max-height: 250px" class="img-thumbnail"
+             th:src="${@imgUtil.ImgUrl2Local(detail.coverImageUrl,'yifymovies',detail.imageDlResults)}" />
+    </div>
+
+    <div class="col-sm-10" th:utext="${detail.infoHtml}"> </div>
+  </div>
+  <!--Carousel Images -->
+  <div class="row">
+    <div class="col" th:each="imgUrl:${detail.carouselImages}">
+      <img style="max-height: 250px" class="img-thumbnail"
+           th:src="${@imgUtil.ImgUrl2Local(imgUrl,'yifymovies',detail.imageDlResults)}" />
+    </div>
+  </div>
+
+  <!--Download Links -->
+  <h4>Download:</h4>
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Server</th>
+      <th>Language</th>
+      <th>Quality</th>
+      <th>Links</th>
+    </tr>
+    <tr th:each="lnk:${detail.downloadLinks}">
+      <td th:text="${lnk.server}"></td>
+      <td th:text="${lnk.lang}"></td>
+      <td >quality</td>
+      <td ><a th:href="${lnk.link}" />Download</td>
+    </tr>
+  </table>
+
+  <!--Subtitle Links , subtitle link is just a link to yifysubs.pro, do hide it.
+    we will crawl that site as well
+  <h4>Subtitle:</h4>
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Server</th>
+      <th>Language</th>
+      <th>Links</th>
+    </tr>
+    <tr th:each="lnk:${detail.subtitleLinks}">
+      <td th:text="${lnk.server}"></td>
+      <td th:text="${lnk.lang}"></td>
+      <td ><a th:href="${lnk.link}" />Download</td>
+    </tr>
+  </table>
+  -->
+</div> <!-- class="container" -->
+
+</body>
+</html>

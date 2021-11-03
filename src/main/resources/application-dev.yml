@@ -1,2 +1,7 @@
 spring:
+  data:
+    mongodb:
+      host: ubuntu20-lts
+      port: 27017
+      database: iroha-dev
   file-image-path: C:\_work\projs\python\scrapy01\file_image

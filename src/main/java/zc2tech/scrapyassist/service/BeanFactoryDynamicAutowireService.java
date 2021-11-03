@@ -4,7 +4,7 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Service;
-import zc2tech.scrapyassist.repo.WomenAdvanceNcR;
+import zc2tech.scrapyassist.repo.WomenadvancencRepo;
 
 @Service
 public class BeanFactoryDynamicAutowireService {
@@ -27,7 +27,7 @@ public class BeanFactoryDynamicAutowireService {
 
         switch(urlShortContext) {
             case "www-womenadvancenc-org":
-                repo = beanFactory.getBean(WomenAdvanceNcR.class);
+                repo = beanFactory.getBean(WomenadvancencRepo.class);
                 break;
         }
 
