@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  data:
+    mongodb:
+      host: ubuntu20-lts
+      port: 27017
+      database: iroha
+  file-image-path: /home/julian/projs/scrapyd/file_image

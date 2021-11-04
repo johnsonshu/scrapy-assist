@@ -1,0 +1,239 @@
+[{
+  "_id": {
+    "$oid": "6179f279593ba2822972e94b"
+  },
+  "title": "Women Advance",
+  "url": "https://www.womenadvancenc.org",
+  "description": "Women AdvaNCe is an independent nonpartisan educational institute dedicated to improving the lives of North Carolina’s women and families by providing education and encouraging constructive public dialogue about progressive ideas and public policy initiatives.",
+  "language": "en"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e94c"
+  },
+  "title": "爆サイ",
+  "url": "http://bakusai.com/",
+  "description": "爆サイ.comは月間10億PVを誇る、北海道から沖縄、海外の気になる話題を網羅したモバイル3キャリア(docomo・au・SoftBank)・スマホ対応の人気掲示板です掲示板カテゴリ数はナント3911個！\nニュース速報・スポーツ・動画・政治・経済・芸能から、パチンコ・スロット・お水・ホスト・風俗・ギャンブル・ゲームまでジャンルの幅広い日本最大級のローカルクチコミ掲示板です"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e94d"
+  },
+  "title": "誰でも簡単に始められる無料のWiki",
+  "url": "https://wiki.seesaa.jp/",
+  "description": "誰でも簡単に始められる無料のWiki（ウィキ）レンタルサービス\nデザインテンプレートが豊富で、カスタマイズも自由自在。ゲーム攻略・まとめサイト作成に便利な国内最大級のWikiサービス。"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e94e"
+  },
+  "title": "青空文庫",
+  "url": "https://www.aozora.gr.jp/",
+  "description": "青空文庫は、誰にでもアクセスできる自由な電子本を、図書館のようにインターネット上に集めようとする活動です。\n著作権の消滅した作品と、「自由に読んでもらってかまわない」とされたものを、テキストとＸＨＴＭＬ（一部はＨＴＭＬ）形式に電子化した上で揃えています。"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e94f"
+  },
+  "title": "阮一峰的个人网站",
+  "url": "http://www.ruanyifeng.com/",
+  "description": "阮一峰的个人网站"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e950"
+  },
+  "title": "百度百科",
+  "url": "https://baike.baidu.com",
+  "description": "让人类平等地认知世界\n百度百科是众人参与可协作的网络百科全书，无论是创建词条、编辑现有词条，您都可以亲手为百度百科作出贡献。"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e951"
+  },
+  "title": "中国教育和科研计算机网",
+  "url": "http://www.edu.cn/",
+  "description": "中国教育和科研计算机网 CERNET"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e952"
+  },
+  "title": "新华网",
+  "url": "http://www.xinhuanet.com/",
+  "description": "新华通讯社主办公司官网\n股票代码：603888"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e953"
+  },
+  "title": "新華網日本語",
+  "url": "http://jp.news.cn",
+  "description": "新華網日本語"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e954"
+  },
+  "title": "Spring Framework Guru",
+  "url": "https://springframework.guru",
+  "description": "Through this site, I hope to leverage my years of experience to accelerate your learning of the Spring Framework. I’m not going to lie to you, its a big framework. The environment for enterprise Java is even bigger. If you’re new to Java, you have a lot to learn. I hope through the content on this web site I can accelerate your education of the Java and Spring landscape"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e955"
+  },
+  "title": "Qiita",
+  "url": "https://qiita.com",
+  "description": "Qiitaは、エンジニアに関する知識を記録・共有するためのサービスです。"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e956"
+  },
+  "title": "Wim Deblauwe",
+  "url": "https://www.wimdeblauwe.com",
+  "description": "Hi, my name is Wim Deblauwe, a software developer specialized in Java, Spring, and JVM related tooling.\nI wrote Taming Thymeleaf, a book to learn more about using Thymeleaf with Spring Boot. I also have a few open-source projects: one that makes it easy to do Spring Boot error handling, another for integration of Cypress with Testcontainers and a few others.\nI blog regularly here about Spring Boot, Thymeleaf,Asciidoctor and other programming related subjects.\nStay up to date with the latest content via the RSS feed, follow me on Twitter, or subscribe to the mailing list"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e957"
+  },
+  "title": "English Stackexchange",
+  "url": "https://english.stackexchange.com",
+  "description": "English Language & Usage Stack Exchange is a question and answer site for linguists, etymologists, and serious English language enthusiasts. It only takes a minute to sign up."
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e958"
+  },
+  "title": "未名空间",
+  "url": "https://mitbbs.com/",
+  "description": "未名空间"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e959"
+  },
+  "title": "水木社区",
+  "url": "https://www.mysmth.net",
+  "description": "水木社区"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e95a"
+  },
+  "title": "Baeldung",
+  "url": "https://www.baeldung.com",
+  "description": "Baeldung helps developers explore the Java ecosystem and simply be better engineers.\n\nWe publish to-the-point guides and courses, with a strong focus on building web applications, Spring, Spring Security, and RESTful APIs."
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e95b"
+  },
+  "title": "segmentfault",
+  "url": "https://segmentfault.com",
+  "description": "我们是一个开放的技术社区\n每一位开发者都在贡献和更新技术内容，共同参与社区建设，维护社区秩序。\n如果你和我们一样有技术理想，并愿意贡献自己的力量，欢迎加入我们"
+},{
+  "_id": {
+    "$oid": "6179f279593ba2822972e95c"
+  },
+  "title": "中国质量认证中心",
+  "url": "http://www.cqccms.com.cn/",
+  "description": "认证为民 品质共享"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e95d"
+  },
+  "title": "中纪委",
+  "url": "https://www.ccdi.gov.cn/",
+  "description": "中共中央纪律检查委员会 中华人民共和国国家监察委员会"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e95e"
+  },
+  "title": "外交部",
+  "url": "https://www.mfa.gov.cn"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e95f"
+  },
+  "title": "中共中央统战部",
+  "url": "http://www.zytzb.gov.cn",
+  "description": "中共中央统一战线工作部"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e960"
+  },
+  "title": "中国长安网",
+  "url": "http://www.chinapeace.gov.cn/",
+  "description": "中共中央政法委员会主办 "
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e961"
+  },
+  "title": "国务院台办",
+  "url": "http://www.gwytb.gov.cn/",
+  "description": "中共中央台办、国务院台办版权所有"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e962"
+  },
+  "title": "中华人民共和国国防部",
+  "url": "http://www.mod.gov.cn/"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e963"
+  },
+  "title": "发改委",
+  "url": "https://www.ndrc.gov.cn",
+  "description": "中华人民共和国国家发展和改革委员会"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e964"
+  },
+  "title": "中国政府网",
+  "url": "http://www.gov.cn/",
+  "description": "主办单位：国务院办公厅　运行维护单位：中国政府网运行中心\n版权所有：中国政府网　中文域名：中国政府网.政务 "
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e965"
+  },
+  "title": "教育部",
+  "url": "http://www.moe.gov.cn/"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e966"
+  },
+  "title": "天津纪委",
+  "url": "https://www.tjjw.gov.cn/",
+  "description": "版权所有：中共天津市纪律检查委员会 天津市监察委员会\n津ICP备10003376号     津公网安备 12010302000985号\n技术支持：成都橙视传媒科技股份公司"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e967"
+  },
+  "title": "上海市人民政府",
+  "url": "https://www.shanghai.gov.cn/",
+  "description": "上海市人民政府"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e968"
+  },
+  "title": "国家市场监督管理总局",
+  "url": "http://www.samr.gov.cn/",
+  "description": "国家市场监督管理总局"
+},{
+  "_id": {
+    "$oid": "6179f290593ba2822972e969"
+  },
+  "title": "信用中国",
+  "url": "https://www.creditchina.gov.cn/",
+  "description": "信用中国\ngood: https://www.creditchina.gov.cn/xinyongxinxixiangqing/xyDetail.html"
+},{
+  "_id": {
+    "$oid": "6179f29a593ba2822972e96a"
+  },
+  "title": "旗帜网",
+  "url": "http://www.qizhiwang.org.cn/",
+  "description": "中央和国家机关党建门户网站\n中央和国家机关工委主管\n旗帜杂志社主办",
+  "language": "en"
+},{
+  "_id": {
+    "$oid": "6179f29a593ba2822972e96b"
+  },
+  "title": "中共中央对外联络部",
+  "url": "https://www.idcpc.org.cn/",
+  "language": "ja"
+},{
+  "_id": {
+    "$oid": "617a57ea5083a31f91c698c3"
+  },
+  "title": "Yify Movies",
+  "url": "https://ww1.yifymovies.pro/",
+  "description": "Yifymovies - Welcome to Yify Movies, you can search and download YIFY movies in excellent 720p, 1080p, 2160p 4K and Bluray quality, all at the smallest file size. We are updating our database daily with best quality YTS Movies Torrents",
+  "_class": "zc2tech.scrapyassist.entity.Site"
+}]
