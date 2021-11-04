@@ -1,6 +1,11 @@
 spring:
   thymeleaf:
     prefix: classpath:/templates/
+
+  # Static resources reloading during development
+  resources:
+    static-locations: classpath:/static/
+
   data:
     mongodb:
       host: ubuntu20-lts

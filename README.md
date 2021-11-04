@@ -10,3 +10,5 @@ www.ccdi.gov.cn => cc/ccdi.gov.cn
 
 ## for packaging with test
 mvn package -Dspring.profiles.active=prod
+
+java -Dspring.profiles.active=prod -jar scrapy
