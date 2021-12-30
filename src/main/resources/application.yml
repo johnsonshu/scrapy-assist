@@ -8,3 +8,7 @@ spring:
   resources:
     static-locations: file:src/main/resources/static/
   #  cache-period: 0
+
+  # just for passing "mvn package", will be replaced
+  # if we use "mvn package -Dspring.profiles.active=prod"
+  file-image-path: /XXX

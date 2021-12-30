@@ -1,14 +1,13 @@
-Only site started with "www" , 
-we will split partition with second part. 
-"ww1" is not "www".
 
-example:
-```
-ww1.yifymovies.pro => ww/ww1.yifymovies.pro
-www.ccdi.gov.cn => cc/ccdi.gov.cn
-```
 
-## for packaging with test
-mvn package -Dspring.profiles.active=prod
+### Configuration
 
-java -Dspring.profiles.active=prod -jar scrapy
+#### Use IntelliJ IDEA to open the project
+The default Run Configuration has "-Dspring.profiles.active=dev" JVM parameter
+, which specify application-dev.yml as configuration file
+
+#### MongoDB
+1) MongoDB should have a database whose name is set 
+in the application-dev.yml or application-prod.yml
+
+2) Create a collection named "sites", then import the json data from "design/sites.json"
