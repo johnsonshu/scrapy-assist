@@ -11,3 +11,7 @@ The default Run Configuration has "-Dspring.profiles.active=dev" JVM parameter
 in the application-dev.yml or application-prod.yml
 
 2) Create a collection named "sites", then import the json data from "design/sites.json"
+
+
+https://user-images.githubusercontent.com/1397823/147733415-1737ef51-7292-4e0b-b1c0-78d6765cebaf.mp4
+
